@@ -11,12 +11,14 @@ import Work from "./Work";
 import TechStackNew from "./TechStackNew";
 import CallToAction from "./CallToAction";
 import setSplitText from "./utils/splitText";
+import { config } from "../config";
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
   );
   const [isMobile] = useState<boolean>(window.innerWidth <= 768);
+  const showCharacterModel = config.features.enable3DCharacter;
 
   useEffect(() => {
     const resizeHandler = () => {
@@ -35,7 +37,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       <Cursor />
       <Navbar />
       <SocialIcons />
-      {isDesktopView && !isMobile && children}
+      {showCharacterModel && isDesktopView && !isMobile && children}
       <div className="container-main">
         <Landing />
         <About />

@@ -72,58 +72,35 @@ const Contact = () => {
             <p>
               <span>{config.social.location}</span>
             </p>
+            <h4>Phone</h4>
+            <p>
+              <a href={`tel:${config.contact.phonePrimary.replace(/\s/g, "")}`} data-cursor="disable">
+                {config.contact.phonePrimary}
+              </a>
+              <br />
+              <a href={`tel:${config.contact.phoneSecondary.replace(/\s/g, "")}`} data-cursor="disable">
+                {config.contact.phoneSecondary}
+              </a>
+            </p>
           </div>
           <div className="contact-box">
-            <h4>Social</h4>
-            <a
-              href={config.contact.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Github <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Linkedin <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Facebook <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
-            </a>
+            <h4>Connect</h4>
+            {config.contact.socials.map((social) => (
+              <a
+                key={social.label}
+                href={social.url}
+                target={social.url.startsWith("mailto:") ? undefined : "_blank"}
+                rel={social.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                data-cursor="disable"
+                className="contact-social"
+              >
+                {social.label} <MdArrowOutward />
+              </a>
+            ))}
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>{config.developer.fullName}</span>
+              Open to CRM, integration, <br /> and transformation roles
             </h2>
             <h5>
               <MdCopyright /> {new Date().getFullYear()}

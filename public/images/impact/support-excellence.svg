@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b080c"/>
+      <stop offset="100%" stop-color="#181028"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9b7fd9"/>
+      <stop offset="100%" stop-color="#c2a4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <path d="M560 360c0-55 36-95 80-95s80 40 80 95v25h-160v-25z" fill="none" stroke="url(#accent)" stroke-width="4"/>
+  <path d="M480 385h320l-40 70h-240l-40-70z" fill="none" stroke="#c2a4ff" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="640" cy="300" r="44" fill="none" stroke="#c2a4ff" stroke-width="4"/>
+  <path d="M620 360l20-55 20 55" fill="none" stroke="#c2a4ff" stroke-width="3" stroke-linecap="round"/>
+  <text x="640" y="470" text-anchor="middle" fill="#c2a4ff" font-family="system-ui,sans-serif" font-size="40" font-weight="600">Support Excellence</text>
+  <text x="640" y="520" text-anchor="middle" fill="#eae5ec" opacity="0.65" font-family="system-ui,sans-serif" font-size="22">SLA &amp; Incident Governance</text>
+</svg>

@@ -6,8 +6,8 @@ const CallToAction = () => {
   return (
     <div className="cta-section">
       <div className="cta-buttons">
-        <Link to="/play" className="cta-btn cta-btn-play" data-cursor="disable">
-          Play With Me →
+        <Link to="/myworks" className="cta-btn cta-btn-play" data-cursor="disable">
+          View Impact →
         </Link>
         
         <a 
@@ -17,7 +17,7 @@ const CallToAction = () => {
           className="cta-btn cta-btn-hire"
           data-cursor="disable"
         >
-          Hire Me →
+          Connect on LinkedIn →
         </a>
       </div>
     </div>

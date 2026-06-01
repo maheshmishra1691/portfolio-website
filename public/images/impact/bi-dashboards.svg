@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b080c"/>
+      <stop offset="100%" stop-color="#10182a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9b7fd9"/>
+      <stop offset="100%" stop-color="#c2a4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="460" y="200" width="360" height="220" rx="14" fill="none" stroke="url(#accent)" stroke-width="3"/>
+  <rect x="490" y="300" width="50" height="90" rx="4" fill="#c2a4ff" opacity="0.85"/>
+  <rect x="560" y="260" width="50" height="130" rx="4" fill="#c2a4ff" opacity="0.65"/>
+  <rect x="630" y="230" width="50" height="160" rx="4" fill="#c2a4ff"/>
+  <rect x="700" y="275" width="50" height="115" rx="4" fill="#c2a4ff" opacity="0.75"/>
+  <path d="M490 250h300" stroke="#c2a4ff" stroke-width="2" opacity="0.4"/>
+  <circle cx="750" cy="240" r="8" fill="#c2a4ff"/>
+  <text x="640" y="470" text-anchor="middle" fill="#c2a4ff" font-family="system-ui,sans-serif" font-size="42" font-weight="600">Executive BI</text>
+  <text x="640" y="520" text-anchor="middle" fill="#eae5ec" opacity="0.65" font-family="system-ui,sans-serif" font-size="22">Analytics &amp; Reporting</text>
+</svg>
