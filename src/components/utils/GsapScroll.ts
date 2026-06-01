@@ -135,6 +135,7 @@ export function setCharTimeline(
 export function setAllTimeline() {
   const careerTimeline = gsap.timeline({
     scrollTrigger: {
+      id: "career-timeline",
       trigger: ".career-section",
       start: "top 50%",
       end: "bottom 30%",
@@ -149,11 +150,16 @@ export function setAllTimeline() {
       { maxHeight: "100%", duration: 1, ease: "none" },
       0
     )
-
     .fromTo(
       ".career-timeline",
       { opacity: 0 },
       { opacity: 1, duration: 0.2 },
+      0
+    )
+    .fromTo(
+      ".career-dot",
+      { top: "0%" },
+      { top: "100%", ease: "none", duration: 1 },
       0
     )
     .fromTo(

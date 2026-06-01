@@ -99,9 +99,9 @@
 
 .career-dot {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   background-color: #aa42ff;
   width: 10px;
   height: 10px;

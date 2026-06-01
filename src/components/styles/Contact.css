@@ -20,6 +20,12 @@
 .contact-flex {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact-box-connect {
+  margin-left: auto;
 }
 .contact-flex h4 {
   font-weight: 500;

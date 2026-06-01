@@ -1,5 +1,11 @@
 import "./styles/Career.css";
 import { config } from "../config";
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { setAllTimeline } from "./utils/GsapScroll";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const getDisplayYear = (period: string) => {
   if (period.includes("Present")) return "NOW";
@@ -10,6 +16,15 @@ const getDisplayYear = (period: string) => {
 };
 
 const Career = () => {
+  useEffect(() => {
+    setAllTimeline();
+    ScrollTrigger.refresh();
+
+    return () => {
+      ScrollTrigger.getById("career-timeline")?.kill();
+    };
+  }, []);
+
   return (
     <div className="career-section section-container">
       <div className="career-container">

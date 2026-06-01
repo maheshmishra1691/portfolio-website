@@ -1,4 +1,4 @@
-import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
 import "./styles/Contact.css";
 import { config } from "../config";
 import gsap from "gsap";
@@ -83,7 +83,7 @@ const Contact = () => {
               </a>
             </p>
           </div>
-          <div className="contact-box">
+          <div className="contact-box contact-box-connect">
             <h4>Connect</h4>
             {config.contact.socials.map((social) => (
               <a
@@ -97,14 +97,6 @@ const Contact = () => {
                 {social.label} <MdArrowOutward />
               </a>
             ))}
-          </div>
-          <div className="contact-box">
-            <h2>
-              Open to CRM, integration, <br /> and transformation roles
-            </h2>
-            <h5>
-              <MdCopyright /> {new Date().getFullYear()}
-            </h5>
           </div>
         </div>
       </div>

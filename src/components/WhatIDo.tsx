@@ -9,14 +9,20 @@ const WhatIDo = () => {
     containerRef.current[index] = el;
   };
   useEffect(() => {
-    if (ScrollTrigger.isTouch) {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.classList.remove("what-noTouch");
-          container.addEventListener("click", () => handleClick(container));
+    const isTouchOrNarrow = ScrollTrigger.isTouch || window.innerWidth <= 1024;
+
+    containerRef.current.forEach((container, index) => {
+      if (!container) return;
+
+      if (isTouchOrNarrow) {
+        container.classList.remove("what-noTouch");
+        container.addEventListener("click", () => handleClick(container));
+        if (index === 0) {
+          container.classList.add("what-content-active");
         }
-      });
-    }
+      }
+    });
+
     return () => {
       containerRef.current.forEach((container) => {
         if (container) {

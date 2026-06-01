@@ -38,7 +38,7 @@ const Navbar = () => {
     links.forEach((elem) => {
       let element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
-        if (window.innerWidth > 1024) {
+        if (window.innerWidth > 1024 && lenis) {
           e.preventDefault();
           let elem = e.currentTarget as HTMLAnchorElement;
           let section = elem.getAttribute("data-href");
@@ -68,7 +68,11 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          MM
+          <img
+            src={config.developer.logo}
+            alt={config.developer.fullName}
+            className="navbar-logo"
+          />
         </a>
         <a
           href={`mailto:${config.contact.email}`}
@@ -86,6 +90,11 @@ const Navbar = () => {
           <li>
             <a data-href="#work" href="#work">
               <HoverLinks text="WORK" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#recognition" href="#recognition">
+              <HoverLinks text="RECOGNITION" />
             </a>
           </li>
           <li>

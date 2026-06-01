@@ -21,7 +21,7 @@ const Landing = ({ children }: PropsWithChildren) => {
             </h1>
           </div>
           <div className="landing-info">
-            <h3>{config.developer.title}</h3>
+            <h3 className="landing-role-title">{config.developer.title}</h3>
             <h2 className="landing-info-h2">
               <div className="landing-h2-1">{config.developer.headline}</div>
             </h2>
@@ -31,9 +31,11 @@ const Landing = ({ children }: PropsWithChildren) => {
           </div>
           {/* Mobile photo - shows only on mobile when 3D character is hidden */}
           <div className="mobile-photo">
-            <div className="mobile-photo-initials" aria-label={config.developer.fullName}>
-              MM
-            </div>
+            <img
+              className="mobile-photo-img"
+              src={config.developer.photo}
+              alt={config.developer.fullName}
+            />
           </div>
         </div>
         {children}

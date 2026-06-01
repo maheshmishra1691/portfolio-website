@@ -1,10 +1,12 @@
 export const config = {
     features: {
-        enable3DCharacter: false,
+        enable3DCharacter: true,
     },
     developer: {
         name: "Mahesh",
         fullName: "Mahesh Mishra",
+        photo: "/images/profile.jpg",
+        logo: "/images/profile.jpg",
         title: "Deputy Manager - Information Technology",
         headline: "CRM & Integration Specialist",
         subtitle: "Digital Transformation Leader",
@@ -146,14 +148,29 @@ export const config = {
             technologies: "Recruitment Platforms, Email Automation, Campaign Management, Lead Operations",
             image: "/images/impact/recruitment.svg",
             description: "Optimized automated recruitment workflows, increasing candidate responses by 30% and generating 500+ qualified leads monthly."
+        }
+    ],
+    recognitions: [
+        {
+            id: 1,
+            title: "Stunning Debutant – Employee of the Quarter",
+            period: "Q3 2025",
+            organization: "ICICI Prudential Asset Management Company Ltd",
+            description: "Recognised for exemplary performance across 3 consecutive months in telephony-CRM integration and digital transformation leadership."
         },
         {
-            id: 8,
-            title: "Digital Transformation Recognition",
-            category: "Achievements",
-            technologies: "Zoho Suite, Innovation, Cross-Functional Delivery, Stakeholder Alignment",
-            image: "/images/impact/achievement.svg",
-            description: "Recognised as Employee of the Quarter Q3 2025 and Internal Hackathon Runner-Up for innovation, delivery under pressure, and CRM transformation impact."
+            id: 2,
+            title: "Runner-Up, Internal Hackathon",
+            period: "2025",
+            organization: "ICICI Prudential Asset Management Company Ltd",
+            description: "Secured 2nd position for innovation, cross-functional collaboration, and problem-solving under competitive pressure."
+        },
+        {
+            id: 3,
+            title: "Tech Support Champion Award",
+            period: "Dec 2021 – Mar 2022",
+            organization: "Karix Mobile Pvt Ltd (now Tanla Platforms)",
+            description: "Honoured for 4 consecutive months for the highest standards of enterprise support quality while serving Fortune 500 banking clients."
         }
     ],
     contact: {

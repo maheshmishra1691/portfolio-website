@@ -1,0 +1,216 @@
+/* Global responsive utilities and cross-section fixes */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet: allow natural document scroll (Lenis still runs on desktop) */
+@media only screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+
+  html {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  .container-main {
+    position: static !important;
+    height: auto !important;
+  }
+
+  .main-body {
+    overflow-x: hidden;
+  }
+}
+
+/* Navbar: compact when more nav links */
+@media only screen and (max-width: 1200px) {
+  .header ul {
+    column-gap: 24px;
+    font-size: 12px;
+  }
+
+  .navbar-connect {
+    font-size: 12px;
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    padding: 12px 0;
+    margin-bottom: -60px;
+  }
+
+  .header ul {
+    column-gap: 12px;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+  }
+
+  .navbar-title {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .header ul {
+    column-gap: 8px;
+    font-size: 9px;
+  }
+
+  .navbar-title {
+    font-size: 13px;
+  }
+}
+
+/* Work section: vertical stack on tablet (matches Work.tsx pin threshold) */
+@media only screen and (max-width: 1024px) {
+  .work-section {
+    height: auto;
+    min-height: auto;
+  }
+
+  .work-flex {
+    flex-direction: column;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .work-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 36px 20px;
+    border-right: none;
+    border-bottom: 1px solid #363636;
+  }
+
+  .work-flex .work-box:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .work-section h2 {
+    font-size: 42px;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    padding: 0 15px;
+  }
+}
+
+/* What I Do: full width on narrow screens */
+@media only screen and (max-width: 600px) {
+  .whatIDO {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .what-box h2 {
+    font-size: 38px;
+    line-height: 1.1;
+    margin: 30px 0;
+  }
+
+  .what-box {
+    max-width: 100%;
+  }
+}
+
+/* Career */
+@media only screen and (max-width: 600px) {
+  .career-section h2 {
+    font-size: 38px;
+    line-height: 1.1;
+    padding: 0 10px;
+  }
+}
+
+/* Recognition: 3 cards centered */
+@media only screen and (min-width: 901px) and (max-width: 1320px) {
+  .recognition-grid {
+    max-width: 900px;
+  }
+
+  .recognition-card {
+    flex: 0 1 380px;
+    max-width: 380px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .recognition-section h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    padding: 0 15px;
+  }
+}
+
+/* Contact */
+@media only screen and (max-width: 600px) {
+  .contact-section h3 {
+    font-size: 32px;
+  }
+
+  .contact-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+}
+
+/* Tech stack section title from index.css */
+@media only screen and (max-width: 600px) {
+  .techstack {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: auto;
+  }
+
+  .techstack h2 {
+    font-size: 32px;
+    top: 80px;
+  }
+}
+
+/* My Works page */
+@media only screen and (max-width: 480px) {
+  .myworks-header h1 {
+    font-size: 36px;
+  }
+
+  .myworks-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .myworks-page {
+    padding: 50px 16px;
+  }
+}
+
+/* Resume button on small screens */
+@media only screen and (max-width: 767px) {
+  .resume-button {
+    bottom: 16px;
+    right: 16px;
+    font-size: 14px;
+    transform: none;
+    letter-spacing: 2px;
+  }
+}

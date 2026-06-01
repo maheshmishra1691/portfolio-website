@@ -194,9 +194,18 @@
   color: var(--backgroundColor);
 }
 .loader-title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.loader-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(194, 164, 255, 0.5);
+  box-shadow: 0 0 20px rgba(194, 164, 255, 0.3);
 }
 @keyframes blink {
   0% {
@@ -349,15 +358,17 @@
   .loading-header {
     padding: 20px 0px;
   }
-  .loader-title {
-    font-size: 16px;
+  .loader-logo {
+    width: 48px;
+    height: 48px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .loading-header {
     padding: 35px 0px;
   }
-  .loader-title {
-    font-size: 18px;
+  .loader-logo {
+    width: 52px;
+    height: 52px;
   }
 }
