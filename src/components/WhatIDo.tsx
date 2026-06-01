@@ -11,25 +11,15 @@ const WhatIDo = () => {
   useEffect(() => {
     const isTouchOrNarrow = ScrollTrigger.isTouch || window.innerWidth <= 1024;
 
-    containerRef.current.forEach((container, index) => {
+    containerRef.current.forEach((container) => {
       if (!container) return;
 
       if (isTouchOrNarrow) {
         container.classList.remove("what-noTouch");
-        container.addEventListener("click", () => handleClick(container));
-        if (index === 0) {
-          container.classList.add("what-content-active");
-        }
+        container.classList.add("what-content-active");
+        container.classList.remove("what-sibling");
       }
     });
-
-    return () => {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.removeEventListener("click", () => handleClick(container));
-        }
-      });
-    };
   }, []);
   return (
     <div className="whatIDO">
@@ -148,18 +138,3 @@ const WhatIDo = () => {
 };
 
 export default WhatIDo;
-
-function handleClick(container: HTMLDivElement) {
-  container.classList.toggle("what-content-active");
-  container.classList.remove("what-sibling");
-  if (container.parentElement) {
-    const siblings = Array.from(container.parentElement.children);
-
-    siblings.forEach((sibling) => {
-      if (sibling !== container) {
-        sibling.classList.remove("what-content-active");
-        sibling.classList.toggle("what-sibling");
-      }
-    });
-  }
-}
