@@ -36,50 +36,6 @@ video {
   }
 }
 
-/* Navbar: compact when more nav links */
-@media only screen and (max-width: 1200px) {
-  .header ul {
-    column-gap: 24px;
-    font-size: 12px;
-  }
-
-  .navbar-connect {
-    font-size: 12px;
-    max-width: 220px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .header {
-    padding: 12px 0;
-    margin-bottom: -60px;
-  }
-
-  .header ul {
-    column-gap: 12px;
-    font-size: 10px;
-    letter-spacing: 0.4px;
-  }
-
-  .navbar-title {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .header ul {
-    column-gap: 8px;
-    font-size: 9px;
-  }
-
-  .navbar-title {
-    font-size: 13px;
-  }
-}
-
 /* Work section: vertical stack on tablet (matches Work.tsx pin threshold) */
 @media only screen and (max-width: 1024px) {
   .work-section {
