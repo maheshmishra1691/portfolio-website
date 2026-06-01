@@ -8,7 +8,6 @@ export const config = {
         photo: "/images/profile.jpg",
         logo: "/images/profile.jpg",
         title: "Deputy Manager - Information Technology",
-        headline: "CRM & Integration Specialist",
         subtitle: "Digital Transformation Leader",
         description: "Execution-focused IT leader with 6+ years of experience driving enterprise CRM transformation, application support, automation, and systems integration across financial services environments."
     },

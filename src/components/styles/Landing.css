@@ -405,7 +405,9 @@
 }
 
 .landing-h2-info {
-  white-space: nowrap;
+  white-space: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .landing-h2-info-1 {

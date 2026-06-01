@@ -6,7 +6,6 @@ const Landing = ({ children }: PropsWithChildren) => {
   const nameParts = config.developer.fullName.split(" ");
   const firstName = nameParts[0] || config.developer.name;
   const lastName = nameParts.slice(1).join(" ") || "";
-  const headlineParts = config.developer.headline.split(" & ");
 
   return (
     <>
@@ -24,24 +23,6 @@ const Landing = ({ children }: PropsWithChildren) => {
           <div className="landing-info">
             <h3 className="landing-role-title">{config.developer.title}</h3>
             <h2 className="landing-info-h2">
-              <div className="landing-h2-1">
-                {headlineParts.length > 1 ? (
-                  <>
-                    <span className="landing-headline-line">
-                      {headlineParts[0]} &amp;
-                    </span>
-                    <span className="landing-headline-line">
-                      {headlineParts.slice(1).join(" & ")}
-                    </span>
-                  </>
-                ) : (
-                  <span className="landing-headline-line">
-                    {config.developer.headline}
-                  </span>
-                )}
-              </div>
-            </h2>
-            <h2>
               <div className="landing-h2-info">{config.developer.subtitle}</div>
             </h2>
           </div>
