@@ -1,99 +1,66 @@
-# 🚀 3D Developer Portfolio Website (React + TypeScript + Three.js)
+# Mahesh Mishra — Portfolio Website
 
-[![3D portfolio preview (click to watch video)](./Screenshot_2026-04-08_22-10-00.png)](./screen-capture%20(13).webm)
+Personal portfolio for **Mahesh Mishra**, Deputy Manager – Information Technology (CRM, integration, Zoho Suite, BI, and digital transformation).
 
-A modern, high-performance **3D developer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, and **WebGL**.
+**Live site:** [https://maheshmishra1691.github.io/portfolio-website/](https://maheshmishra1691.github.io/portfolio-website/)
 
-If you’re a developer looking for a **portfolio template** that feels premium, interactive, and memorable—this repo is for you.
-
-> Live preview: https://www.redoyanulhaque.me/
+**Repository:** [https://github.com/maheshmishra1691/portfolio-website](https://github.com/maheshmishra1691/portfolio-website)
 
 ---
 
-## ✨ Highlights
+## Highlights
 
-- **3D / WebGL experience** powered by **Three.js**
-- Smooth animations with **GSAP**
-- Modern **React + TypeScript** codebase
-- Fast, responsive UI (desktop + mobile)
-- Designed for developers, engineers, programmers, and creators
-
----
-
-## 🧰 Tech Stack
-
-- **React**
-- **TypeScript**
-- **Three.js / WebGL**
-- **GSAP**
-- **HTML / CSS / JavaScript**
+- Interactive **3D character** (Three.js / WebGL)
+- Smooth scroll and section animations (**GSAP**)
+- **React + TypeScript** with responsive layout
+- Business impact, career timeline, recognition, and tech stack sections
 
 ---
 
-## 🚀 Getting Started
+## Tech stack
 
-### 1) Clone
+- React, TypeScript, Vite
+- Three.js, GSAP, Lenis
+- Deployed via **GitHub Actions** → GitHub Pages
+
+---
+
+## Local development
 
 ```bash
-git clone https://github.com/red1-for-hek/portfolio-website.git
+git clone https://github.com/maheshmishra1691/portfolio-website.git
 cd portfolio-website
-```
-
-### 2) Install
-
-```bash
-npm install
-```
-
-### 3) Run locally
-
-```bash
+npm install --legacy-peer-deps
 npm run dev
 ```
 
-### 4) Build
+Build for production:
 
 ```bash
 npm run build
 ```
 
----
+Build for GitHub Pages (subpath):
 
-## 🧩 Customize (Quick Guide)
-
-Typical things you’ll want to update:
-
-- **Your name + hero section text**
-- **Projects list**
-- **Social links** (GitHub, LinkedIn, email)
-- **SEO meta title/description**
+```bash
+npm run build:pages
+```
 
 ---
 
-## ⭐ Support
+## Customize
 
-If you found this useful:
-
-- Please **star** the repository (it helps a lot)
-- Share it with a friend who needs a portfolio template
-- Sponsor via the **Sponsor** button on GitHub (if available in your region)
+Edit content in `src/config.ts` (profile, experience, projects, recognitions, contact).
 
 ---
 
-## 🤝 Connect
+## Connect
 
-- LinkedIn: https://www.linkedin.com/in/red1-for-hek/
-
----
-
-## 🏷️ Recommended GitHub Topics (add in repo settings)
-
-Add these topics to improve GitHub search visibility:
-
-`portfolio` `developer-portfolio` `portfolio-website` `portfolio-template` `3d-portfolio` `react` `typescript` `threejs` `webgl` `gsap` `frontend` `vite`
+- LinkedIn: [linkedin.com/in/maheshmishra1691](https://linkedin.com/in/maheshmishra1691)
+- Email: maheshgmishra@zohomail.in
 
 ---
 
-## 🪪 License
+## License
 
-This project is open source and available under the **MIT License**. See [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
